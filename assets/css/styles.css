@@ -209,7 +209,7 @@
 }
 
 .hr {
-    border: 2px solid var(--gray);
+    border: 1px solid var(--gray);
 }
 
 .alt-card {
@@ -272,11 +272,11 @@
     padding: 0;
     margin: 0;
     padding-left: 20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--gray);
   }
   
   .quantity input:focus {
-    outline: 0;
+    border: 1px solid var(--gray);
   }
   
   .quantity-nav {
@@ -291,7 +291,7 @@
     border-left: 1px solid #eee;
     width: 20px;
     text-align: center;
-    color: #333;
+    color: rgb(0, 0, 0);
     font-size: 13px;
     font-family: "Trebuchet MS", Helvetica, sans-serif !important;
     line-height: 1.7;
@@ -317,5 +317,9 @@
     height: 50%;
   }
 
+  .quantity-button:active{
+      background-color: var(--gray);
+      color: #fff;
+  }
   /* ########## */
 
